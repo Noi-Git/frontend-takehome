@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Carousel</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand pl-5" href="#">Front-end Take Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse fixed-top pt-1"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ml-auto pr-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Bootstrap4-Carousel</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="js-carousel.html">Javascript-Carousel</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides ">
+        <div class="numbertext">1 / 5</div>
+        <img
+          src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          style="width:100%"
+        />
+        <div class="text">Sun Flower</div>
+      </div>
+
+      <div class="mySlides ">
+        <div class="numbertext">2 / 5</div>
+        <img
+          src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
+          style="width:100%"
+        />
+        <div class="text">Poppy Flowers</div>
+      </div>
+
+      <div class="mySlides ">
+        <div class="numbertext">3 / 5</div>
+        <img
+          src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+          style="width:100%"
+        />
+        <div class="text">Cherry Blossom</div>
+      </div>
+      <div class="mySlides ">
+        <div class="numbertext">4 / 5</div>
+        <img
+          src="https://images.unsplash.com/photo-1436891436013-5965265af5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          style="width:100%"
+        />
+        <div class="text">Lotus flower</div>
+      </div>
+      <div class="mySlides ">
+        <div class="numbertext">5 / 5</div>
+        <img
+          src="https://images.unsplash.com/photo-1550081295-5d987f78050c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+          style="width:100%"
+        />
+        <div class="text">Bouquet</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!-- ===== CONTENT ===== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9 text-center mt-5 mx-auto">
+          <h2 class="display-1 main-welcome">Welcome</h2>
+          <h1 class="main-title pt-5">
+            Front-end Take Home Javascript Corusel
+          </h1>
+          <p class="lead pt-3">
+            Use pre-existing javascript libraries or frameworks to display
+            interactive carousel of 5 images of your choosing, scrolling
+            horizontally
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== ABOUT ===== -->
+      <h3 class="about-title mt-5">About this project</h3>
+      <p class="about-description pt-3">
+        Create a separate HTML page, showcase your Javascript capabilities by
+        creating your own implementation of part 1, without external libraries
+        or frameworks (note: you may use jQuery for accessing and manipulating
+        DOM elements, but write your own Javascript functions for the Carousel
+        and navigation elements on your own. We are curious to see your
+        implementation).
+      </p>
+
+      <p>
+        Images and layout can be the same. Be sure to include an anchor tag
+        linking from this new page to the page you created in Part 1. Update
+        your initial page with an anchor tag linking to your new page. Users
+        should be able to navigate between both pages and use either carousel
+        effectively.
+      </p>
+    </div>
+
+    <!-- javascritpt -->
+    <script src="js-carousel.js"></script>
+  </body>
+</html>
